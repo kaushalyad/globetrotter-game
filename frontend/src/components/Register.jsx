@@ -32,7 +32,7 @@ const Register = () => {
         onSubmit={handleSubmit}
         className="bg-white p-8 rounded-lg shadow-md w-96"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">Register</h2>
         <input
           type="text"
           placeholder="Username"
@@ -40,14 +40,14 @@ const Register = () => {
           onChange={(e) =>
             setFormData({ ...formData, username: e.target.value })
           }
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded bg-white text-black"
         />
         <input
           type="email"
           placeholder="Email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded bg-white text-black"
         />
         <input
           type="password"
@@ -56,7 +56,7 @@ const Register = () => {
           onChange={(e) =>
             setFormData({ ...formData, password: e.target.value })
           }
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded bg-white text-black"
         />
         <button
           type="submit"

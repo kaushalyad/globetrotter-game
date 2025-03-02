@@ -4,12 +4,12 @@ const GuessForm = ({ guess, setGuess, handleGuess, options }) => {
   return (
     <form onSubmit={handleGuess} className="guess-form  w-[80vw] max-w-[500px]">
       <h2>What's your guess?</h2>
-      <select value={guess} onChange={(e) => setGuess(e.target.value)} required className=" mt-4">
+      <select value={guess} onChange={(e) => setGuess(e.target.value)} required className=" mt-4 bg-white text-black">
         <option value="" disabled>
           Select an option
         </option>
         {options.map((option, index) => (
-          <option key={index} value={option}>
+          <option key={index} value={option} >
             {option}
           </option>
         ))}

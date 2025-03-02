@@ -47,7 +47,7 @@ const CorrectPage = () => {
         loop={true}
         style={{ height: 150 }}
       />
-      <p className="mt-10">You guessed it right! Well done!</p>
+      <p className="mt-10 text-black">You guessed it right! Well done!</p>
       <button
         onClick={() => {
           navigate("/game");
