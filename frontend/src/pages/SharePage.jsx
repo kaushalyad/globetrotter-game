@@ -47,7 +47,7 @@ const SharePage = () => {
         initial={{ opacity: 0 }} // Initial animation state
         animate={{ opacity: 1 }} // Animation when the component mounts
         transition={{ delay: 0.4, duration: 0.5 }} // Animation delay and duration
-        className="text-lg mb-4"
+        className="text-lg mb-4 text-black"
       >
         Your friend scored{" "}
         <span className="text-green-500">{shareeScore.correct} correct</span>{" "}
